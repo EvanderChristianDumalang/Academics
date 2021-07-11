@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grade Conversion</title>
+
+</head>
+
+<body>
+    <p>Grade Conversion with Javascript</p>
+    <input type="text" id="input" placeholder="Fill in Your Grade" style="width: 500px;">
+    <button type="button" onclick='convertNumber(document.getElementById("input").value)'>Convert </button>
+
+    <br><br>
+
+    <p id="oResult">Your Grade:</p>
+
+</body>
+<script>
+
+    function convertNumber(input) {
+        if (input.length > 3 || input == "" || input < 0) {
+            alert("Please change the number to a number from 0 to 100!");
+        } else if (input >= 0 && input <= 40) {
+            document.getElementById("oResult").innerHTML = "Your Grade: E";
+        } else if (input >= 41 && input <= 55) {
+            document.getElementById("oResult").innerHTML = "Your Grade: D";
+        } else if (input >= 56 && input <= 70) {
+            document.getElementById("oResult").innerHTML = "Your Grade: C";
+        } else if (input >= 71 && input <= 80) {
+            document.getElementById("oResult").innerHTML = "Your Grade: B";
+        } else if (input >= 81 && input <= 100) {
+            document.getElementById("oResult").innerHTML = "Your Grade: A";
+        }
+    }
+
+</script>
+
+</html>
