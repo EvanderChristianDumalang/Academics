@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=D:\App\flutter"
-export "FLUTTER_APPLICATION_PATH=E:\Kuliah\Github\School\School\Flutter\pokedex"
+export "FLUTTER_ROOT=D:\App\Flutter"
+export "FLUTTER_APPLICATION_PATH=E:\Kuliah\Github\School\Academics\Flutter\pokedex"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib\main.dart"
 export "FLUTTER_BUILD_DIR=build"
