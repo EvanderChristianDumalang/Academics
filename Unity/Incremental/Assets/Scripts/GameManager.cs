@@ -175,16 +175,16 @@ public class GameManager : MonoBehaviour
 
     private void CheckGoldAchievement()
     {
-        List<int> _milestoneAchieved = new List<int>();
+        List<int> _goldTotalAchieved = new List<int>();
         foreach (int value in AchievementController.Instance.GoldMilestones)
         {
             if(_totalGold >= value)
             {
-                AchievementController.Instance.UnlockAchievement(AchievementType.GetGoldAmount, $"{ value }");
-                _milestoneAchieved.Add(value);
+                AchievementController.Instance.UnlockAchievement(AchievementType.GoldAmount, $"{ value }");
+                _goldTotalAchieved.Add(value);
             }
         }
-        AchievementController.Instance.RemoveGoldMilestones(_milestoneAchieved);
+        AchievementController.Instance.RemoveGold(_goldTotalAchieved);
     }
 }
 
