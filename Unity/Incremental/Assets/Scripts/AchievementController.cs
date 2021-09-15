@@ -55,7 +55,7 @@ public class AchievementController : MonoBehaviour
         _popUpTransform.localScale = Vector2.right;
     }
 
-    //GoldAchievement
+    //Gold Achievement
     private List<int> _totalGold = new List<int>();
     public List<int> GoldMilestones
     {
@@ -64,6 +64,7 @@ public class AchievementController : MonoBehaviour
             return _totalGold;
         }
     }
+    //Pengecekan Achievement
     private void Awake()
     {
         foreach (AchievementData achievement in _achievementList)
@@ -74,6 +75,7 @@ public class AchievementController : MonoBehaviour
             }
         }
     }
+    //Remove Gold Achievement supaya tidak berulang
     public void RemoveGold(List<int> total)
     {
         foreach (int value in total)
